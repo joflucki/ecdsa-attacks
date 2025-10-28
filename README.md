@@ -1,8 +1,7 @@
 # ECDSA Attacks — Bad nonce for the win 💥
 
-![GitHub License](https://img.shields.io/badge/license-MIT-blue)
-![Sage Badge](https://img.shields.io/badge/built%20with-SageMath-2b6db0)
-![Language](https://img.shields.io/badge/language-Sage%2FPython-3572A5)
+![GitHub License](https://img.shields.io/github/license/joflucki/timelock)
+![Rust Badge](https://img.shields.io/badge/built%20with-Sage-2e2efe?logo=sagemath)
 
 A series of attacks against faulty ECDSA implementations — completed as part of the *Industrial Cryptography (MA-ICR)* course at the *University of Applied Sciences and Arts (HES-SO)*.
 
