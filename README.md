@@ -3,7 +3,7 @@
 ![GitHub License](https://img.shields.io/github/license/joflucki/timelock)
 ![Rust Badge](https://img.shields.io/badge/built%20with-Sage-2e2efe?logo=sagemath)
 
-A series of attacks against faulty ECDSA implementations — completed as part of the *Industrial Cryptography (MA-ICR)* course at the *University of Applied Sciences and Arts (HES-SO)*.
+A series of attacks against faulty ECDSA implementations — completed as part of the *Industrial Cryptography (MA-ICR)* course at the *University of Applied Sciences and Arts Western Switzerland (HES-SO)*.
 
 This repository demonstrates practical exploits that recover ECDSA private keys when the ephemeral nonce `k` is generated poorly (biased, partially leaked, or otherwise predictable).
 
