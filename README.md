@@ -26,7 +26,7 @@ def sign1(G, m, n, a):
     return (r, (F(h(m)) + a * r) / F(k))
 ```
 
-The nonce has bad randomness, and is 32 bits too small. Because the nonce is bounded to the value $B = 2^{log_2(n) - 32}$, we can use a lattice-attack[^1] to retreive the private key. For that, we have access to 20 messages and their respective signatures, as well as the public key.
+The nonce has bad randomness, and is 32 bits too small. Because the nonce is bounded to the value $B = 2^{log_2(n) - 32}$, we can use a lattice attack[^1] to retreive the private key. For that, we have access to 20 messages and their respective signatures, as well as the public key.
 
 To solve for the private key, we have to translate our ECDSA problem into a hidden number problem of the following form: 
 
@@ -122,7 +122,7 @@ def sign4(G, m, n, a):
     return (r, (F(h(m)) + a * r) / F(k))
 ```
 
-Here, the nonce is deterministic, but is built using both the message and the private key. In addition, those values are passed in a hash function, which is hard to reverse. In theory, recovering $k$ using the techniques from challenge \#2 and \#3 seems to be impossible. However, the hash function used is SHA256, which has an output of 256 bits. This is small when compared to the required size of 384 bits. In challenge \#1, the nonce was only 32 bits smaller than the required size, and we were able to recover the nonce using a lattice-attack. In this case, the nonce is 128 bits smaller than the required size. Theoretically, we can use the same attack on this challenge, by simply adapting the bound $B$. In this case, the bound $B=2^{256}$.
+Here, the nonce is deterministic, but is built using both the message and the private key. In addition, those values are passed in a hash function, which is hard to reverse. In theory, recovering $k$ using the techniques from challenge \#2 and \#3 seems to be impossible. However, the hash function used is SHA256, which has an output of 256 bits. This is small when compared to the required size of 384 bits. In challenge \#1, the nonce was only 32 bits smaller than the required size, and we were able to recover the nonce using a lattice attack. In this case, the nonce is 128 bits smaller than the required size. Theoretically, we can use the same attack on this challenge, by simply adapting the bound $B$. In this case, the bound $B=2^{256}$.
 
 ```python
 B = pow(2, 256)
