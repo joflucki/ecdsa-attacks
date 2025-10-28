@@ -35,13 +35,14 @@ $$t_i\alpha - a_i \mod p = b_i \text{ with } b_i < B$$
 
 Using the ECDSA formula, we can establish the following relationships:
 
-$$p = n$$
-
-$$a_i = \frac{r_i}{s_i}$$
-
-$$t_i = -\frac{h(m_i)}{s_i}$$
-
-$$B = 2^{log_2(n) - 32}$$
+$$
+\begin{align*}
+p &= n \\
+a_i &= \frac{r_i}{s_i} \\
+t_i &= -\frac{h(m_i)}{s_i} \\
+B &= 2^{log_2(n) - 32} \\
+\end{align*}
+$$
 
 Then, we can build the HNP lattice matrix $M$[^1], and apply the LLL algorithm. This results in a new matrix $M'$, which has shorter vectors. In this matrix $M'$, we hope that one of the vectors has the form
 
