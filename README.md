@@ -49,7 +49,7 @@ $$v_b = (b_1, b_2, b_3, \dots, b_m, -B\alpha/p, B)$$
 
 so that we can recover $\alpha$. For that, we take each row of the matrix $M'$, solve for $\alpha$, recompute the public key, and compare it to the given public key.
 
-[^1]:https://eprint.iacr.org/2019/023.pdf
+[^1]: J. Breitner and N. Heninger, “Biased Nonce Sense: Lattice Attacks against Weak ECDSA Signatures in Cryptocurrencies,” 2019, 2019/023. Accessed: Oct. 28, 2025. [Online]. Available: https://eprint.iacr.org/2019/023
 
 ## Challenge #2
 
@@ -137,4 +137,5 @@ This repository is intended for educational and defensive purposes only: to lear
 
 # Acknowledgements
 
-* Prof. Alexandre Duc — original problem set and template.
+* A. Duc — Original problem set and template.
+* J. Breitner and N. Heninger — "Biased Nonce Sense: Lattice Attacks against Weak ECDSA Signatures in Cryptocurrencies"
