@@ -8,7 +8,7 @@ A series of attacks against faulty ECDSA implementations — completed as part o
 
 This repository demonstrates practical exploits that recover ECDSA private keys when the ephemeral nonce `k` is generated poorly (biased, partially leaked, or otherwise predictable).
 
-Problem set is the courtesy of Prof. Alexandre Duc, All Rights Reserved :copyright:. Solutions in this repository are released under the MIT license.
+Problem set is the courtesy of Prof. Alexandre Duc, All Rights Reserved ©. Solutions in this repository are released under the MIT license.
 
 # How these attacks work (in a nutshell)
 
