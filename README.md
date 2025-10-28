@@ -9,6 +9,11 @@ This repository demonstrates practical exploits that recover ECDSA private keys 
 
 Problem set is the courtesy of Prof. Alexandre Duc, All Rights Reserved ©. Solutions in this repository are released under the MIT license.
 
+# Requirements
+
+* SageMath version 10.7 or higher (Tested with SageMath version 10.7, Release Date: 2025-08-09)
+* Pycryptodome module version 3.23.0 or higher (Tested with Pycryptodome module version 3.23.0)
+
 # How these attacks work (in a nutshell)
 
 ## Challenge #1
